@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "J Count",
+    "description": "Chrome Extension that highlights and creates awareness over the use of the word 'just'.",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
